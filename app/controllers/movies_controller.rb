@@ -29,7 +29,7 @@ class MoviesController < ApplicationController
     new_movie.director_id = @director_id
     new_movie.image = @image
     new_movie.save
-    redirect_to("/movie_templates/index")
+    redirect_to("/movies")
 
   end
 end
