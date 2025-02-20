@@ -39,4 +39,11 @@ class MoviesController < ApplicationController
     movie.destroy
     redirect_to("/movies")
   end
+
+  def update
+    the_id = params['movie_id']
+    movie = Movie.where({ :id => the_id})[0]
+    movie.destroy
+    redirect_to("/movies")
+  end
 end
